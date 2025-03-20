@@ -1,8 +1,8 @@
 # AppAutoUpdater
-Similar to Obtainium, but for Windows. Use this to enable automatic updates for software releases from GitHub which don't automatically update by themselves 
+Similar to [Obtainium](https://github.com/ImranR98/Obtainium), but for Windows. Use this to enable automatic updates for software releases from GitHub which don't automatically update by themselves 
 
 # How to Use
-* Download both .ps1 scripts.
+* Download both ```.ps1``` scripts.
 * Add GitHub repo releases for software you want to automatically update to ```config.ps1```
 * Set the ```work_script.ps1``` location in ```config.ps1```
 * Set update frequency:
