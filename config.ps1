@@ -4,9 +4,14 @@ $track_list = @(
 )
 
 # Set location of where you have the other script
-$work_script_location = "C:\Users\USERNAME\Documents\test.ps1"
+$work_script_location = "C:\Users\USERNAME\Documents\work_script.ps1"
 
-# Don't touch anything below this line.
+
+
+
+
+
+# Leave everything below this line.
 ####################
 ####################
 ####################
@@ -14,5 +19,3 @@ $work_script_location = "C:\Users\USERNAME\Documents\test.ps1"
 foreach ($project in $track_list) {
     & $work_script_location $project
 }
-
-Read-Host -Prompt "Press Enter to exit"
