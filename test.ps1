@@ -1,5 +1,4 @@
-$project_url = "https://api.github.com/repos/Eugeny/tabby/releases/latest"
-# $test_url = "https://api.github.com/repos/ungoogled-software/ungoogled-chromium-windows/releases/latest"
+$project_url = $args[0]
 
 $latest = (Invoke-RestMethod -Uri $project_url)
 
@@ -47,11 +46,9 @@ $installer_download_url = [string]$asset_matches[0]
 $install_file_extension = $installer_download_url.Substring($installer_download_url.Length - 4)
 
 $outputFile = "$env:TEMP\" + "temp_installer" + $install_file_extension
-Write-Output "output installer named"
-Write-Output $outputFile
 
 # Download the file
-Write-Output "Downloading file..."
+Write-Output "Downloading installer..."
 Invoke-WebRequest -Uri $installer_download_url -OutFile $outputFile
 
 # Install the file (assuming it's an executable installer)
