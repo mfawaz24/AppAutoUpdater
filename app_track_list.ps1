@@ -1,6 +1,6 @@
 $track_list = @(
-    "https://api.github.com/repos/Eugeny/tabby/releases/latest",
-    "https://api.github.com/repos/ungoogled-software/ungoogled-chromium-windows/releases/latest"
+    # "https://api.github.com/repos/Eugeny/tabby/releases/latest",
+    # "https://api.github.com/repos/ungoogled-software/ungoogled-chromium-windows/releases/latest"
 )
 
 # Set location of where you have the other script
